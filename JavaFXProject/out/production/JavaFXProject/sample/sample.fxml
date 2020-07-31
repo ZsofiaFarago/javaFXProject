@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="261.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <Pane fx:id="basePane" prefHeight="261.0" prefWidth="362.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="100.0" prefHeight="30.0" prefWidth="170.0" spacing="24.0">
+               <children>
+                  <Label id="label1" fx:id="label1" />
+                  <Label id="label2" fx:id="label2" />
+                  <Label id="label3" fx:id="label3" />
+                  <Label id="label4" fx:id="label4" />
+                  <Label id="label5" fx:id="label5" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="67.0" prefHeight="30.0" prefWidth="170.0" spacing="10.0">
+               <children>
+                    <TextField id="input1" fx:id="input1" prefHeight="26.0" prefWidth="26.0" />
+                    <TextField id="input2" fx:id="input2" prefHeight="26.0" prefWidth="26.0" />
+                    <TextField id="input3" fx:id="input3" prefHeight="26.0" prefWidth="26.0" />
+                    <TextField id="input4" fx:id="input4" prefHeight="26.0" prefWidth="26.0" />
+                    <TextField id="input5" fx:id="input5" prefHeight="26.0" prefWidth="26.0" />
+               </children>
+            </HBox>
+              <Label layoutX="145.0" layoutY="8.0" text="LOTTÓ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+              <Label fx:id="label" alignment="CENTER" layoutX="14.0" layoutY="43.0" minHeight="16" minWidth="69" text="Írjon be 5 számot 1 és 90 között!" textAlignment="CENTER" />
+              <Button fx:id="button" layoutX="240.0" layoutY="70.0" onAction="#handleButtonAction" text="Sorsolás" />
+            <Label id="resultText" fx:id="resultText" layoutX="14.0" layoutY="130.0" />
+         </children></Pane>
+      <Pane fx:id="alertPane" layoutX="89.0" layoutY="95.0" prefHeight="261.0" prefWidth="362.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbcfe1" height="123.0" layoutX="96.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+            <Label fx:id="alertText" alignment="TOP_CENTER" layoutX="96.0" layoutY="105.0" prefHeight="61.5" prefWidth="171.0" text="Text" wrapText="true">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></Label>
+            <Button id="alertButton" fx:id="alertButton" layoutX="161.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleAlertButton" text="OK" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
