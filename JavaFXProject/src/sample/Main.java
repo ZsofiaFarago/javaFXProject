@@ -14,7 +14,6 @@ public class Main extends Application {
         stage.setTitle("Lottó program");
         stage.setResizable(false);
         stage.setScene(new Scene(root));
-		System.out.printl("Hello World")>
         stage.show();
     }
 
